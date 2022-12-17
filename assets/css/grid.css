@@ -1,4 +1,16 @@
+body{
+    background-color:  #f7edee;
+    overflow-x: hidden;
+}
 /*@Container*/
+
+/* .border{
+    border: 2px solid lightseagreen;
+} */
+
+.mt-50{
+    margin-top: 150px;
+}
 
 .container{
     max-width: 1024px;
@@ -7,6 +19,10 @@
 
 .container-large{
     max-width: 1280px;
+    margin: 0 auto;
+}
+.container-large-2{
+    max-width: 1400px;
     margin: 0 auto;
 }
 

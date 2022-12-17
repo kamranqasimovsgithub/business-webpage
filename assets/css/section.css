@@ -1,23 +1,86 @@
-@media screen and (min-width: 1024px) {
 
+.pink-section-content-content{
+    background-color:  rgb(123, 226, 123);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media screen and (min-width: 1022px) {
     .hero-section{
         margin-top: 150px;
+        display: block;
+        height: 500px;
+        text-align: center;
+        padding: 10px;
     }
+
+    .hero-section-container{
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section-container .column{
+        width: 100%;
+    }
+
 
     .hero-section .hero-image{
-        padding-top: 80px;
+        padding-top: 20px;
     }
     
+    .hero-section .hero-image img{
+        width: 450px;
+        height: 300px;
+        border-radius: 5%;
+        margin-right: 30px;
+    }
+    
+    .quarter-circle-top-right{
+        transition: 3s;
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 100px;
+        height: 100px;
+        background: rgb(147, 147, 233);
+        border-radius: 0 0 0 100px;
+        -moz-border-radius: 0 0 0 100px;
+        -webkit-border-radius: 0 0 0 100px;
+    }
 
+
+    
+    .quarter-circle-bottom-left{
+        transition: 3s;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background: rgb(123, 226, 123);
+        border-radius: 0 100px 0 0;
+        -moz-border-radius: 0 100px 0 0;
+        -webkit-border-radius: 0 100px 0 0;
+    }
+
+    .hero-section .hero-content{
+        text-align: center;
+    }
     .hero-section .hero-content h1{
-        max-width: 745px;
-        font-size: 80px;
+        max-width: 345px;
+        font-size: 60px;
+        font-weight: 900;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     .hero-section .hero-content p{
         font-size: 18px;
         max-width: 480px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .hero-section .hero-content{
         position: absolute;
@@ -27,10 +90,7 @@
     }
 
 
-    .section-header p{
-        width: 584px;
-        margin: 0 auto; 
-    }
+    
 
 
     /*pink-section*/
@@ -38,21 +98,39 @@
         margin-top: 100px;
         margin-bottom: 150px;
     }
+    
+    .section-header{
+    }
 
+    .section-header p{
+        width: 584px;
+        margin: 0 auto; 
+    }
+
+    .pink-section-background{
+        margin: 5px;
+        background-color: #2473a4;
+    }
     .pink-section-content{
         padding-right: auto;
     }
 
-    .features .card-content{
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .pink-section-small .pink-section-image img{
+        width: 250px;
+        height: 250px;
+        margin: 5px;
     }
 
-    .features .card-content .card-body{
-        margin-bottom: auto;
+    .pink-section-image{
+        padding: 30px;
+        background-origin: 2px solid;
     }
+    
+    .pink-section img{
+      
+        border-radius: 50%;
+    }
+
 
 }
 
@@ -62,11 +140,44 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .hero-section .hero-image{
+        margin-top: 30px;
+    }
     .hero-section .hero-image img{
-        width: 100%;
+        width: 70%;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 5%;
+
     }
     .hero-content{
         margin-bottom: 15px;
+    }
+
+    .quarter-circle-bottom-left{
+        transition: 3s;
+        position: absolute;
+        bottom: -60px;
+        left: 10%;
+        width: 60px;
+        height: 60px;
+        background: rgb(123, 226, 123);
+        border-radius: 0 100px 0 0;
+        -moz-border-radius: 0 100px 0 0;
+        -webkit-border-radius: 0 100px 0 0;
+    }
+
+    .quarter-circle-top-right{
+        transition: 3s;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+        background: rgb(147, 147, 233);
+        border-radius: 0 0 0 100px;
+        -moz-border-radius: 0 0 0 100px;
+        -webkit-border-radius: 0 0 0 100px;
     }
 
     .pink-section{
@@ -81,73 +192,106 @@
     }
 
     .pink-section-small{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        height: 500px;
+        padding: 0;
+    }
+    .pink-section-content-content{
+        position: absolute;
+        bottom: 0;
+        height: 300px;
     }
     .pink-section-content{
         text-align: center;
+        width: 320px;
+        margin: 0 auto;
     }
 
-    .pink-section-small img{
-        width: 80%;
-        height: 80%;
+    .pink-section-image{
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 50%;
+        min-width: 150px;
+        padding: 0;
+        height: 200px;
+        max-width: 300px;
+    }
+
+    .pink-section-small .pink-section-image img{
+        width: 180px;
+        height: 180px;
         margin: 5px auto;
     }
 
-    .features .card{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap; 
-        padding-top: 50px;
-        padding-bottom: 30px;   
-    }
-    .features .card-content{
-        flex: 1 0 0;
-    }
-
-
-    .features .card-image,
-    .features .card-content{
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 50%;
-    }
-
     
-    .features .card-content{
-        background-color: transparent;
-    }
     
+}
+
+
+@media screen and (max-width: 300px) {
+    .quarter-circle-bottom-left{
+        transition: 3s;
+        position: absolute;
+        bottom: -60px;
+        left: 5%;
+        width: 30px;
+        height: 30px;
+        background: rgb(123, 226, 123);
+        border-radius: 0 100px 0 0;
+        -moz-border-radius: 0 100px 0 0;
+        -webkit-border-radius: 0 100px 0 0;
+    }
+
+    .quarter-circle-top-right{
+        transition: 3s;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        background: rgb(147, 147, 233);
+        border-radius: 0 0 0 100px;
+        -moz-border-radius: 0 0 0 100px;
+        -webkit-border-radius: 0 0 0 100px;
+    }
+
 }
 
 
 @media screen and (max-width: 768px) {
-    .features .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap; 
-        padding-top: 50px;
-        padding-bottom: 30px;   
-    }
+    
 
-    .features .card-content{
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 90%;
+    .section-header p{
+        color: #4B5D68;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2;
+        margin: 0 auto;
+        width: 60%;
+        min-width: 220px;
     }
-    .features .card-image{
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 80%;
+    
+    
+    .section-header h2{
+        font-size: 30px;
+        color: #212353;
+        font-weight: 700;
     }
 }
 
+.hero-content{
+    margin-top: 50px;
+}
+
+
 .hero-section .hero-content h1{
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #212353;
 }
 .hero-section .hero-content p{
@@ -155,6 +299,7 @@
     line-height: 2;
     color: #4B5D68;   
     font-weight: 500; 
+    margin-bottom: 30px;
 }
 
 /*Pink-section*/
@@ -163,15 +308,14 @@
     margin-bottom: 150px;
 }
 .pink-section-background{
-    background-position: right;
-    background-image: url('../image/image-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50px;
+    border-radius: 10px;
+}
+
+.pink-section-image{
+    background-origin: 2px solid;
 }
 
 .pink-section img{
-    height: 300px;
     border-radius: 50%;
 }
 
@@ -183,6 +327,8 @@
 }
 
 
+
+
 .pink-section {
     color: #4B5D68;
     font-size: 18px;
@@ -192,22 +338,24 @@
 .pink-section-content h2{
     font-size: 30px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .pink-section-content p{
     line-height: 1.5;
+    color: #4a403d;
 }
 /*Features*/
 
-/* .features .section-header{
-    margin-bottom: 70px;
-} */
+
 
 .section-header p{
     color: #4B5D68;
     font-size: 18px;
     font-weight: 500;
     line-height: 2;
+    margin: 0 auto;
+    width: 60%;
 }
 
 
@@ -217,30 +365,8 @@
     font-weight: 700;
 }
 
-.features .card{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; 
-    padding-top: 50px;
-    padding-bottom: 30px;   
-}
-.features .card-content{
-    flex: 1 0 0;
-}
-
-.features .card-image,
-.features .card-content{
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 
-
-/*Comments*/
-.comments{
-    position: relative;
-    overflow-x: hidden;
-}
 
 
 @media screen and (max-width: 394px) {
@@ -249,5 +375,81 @@
         height: 200px;
         width: 200px;
         margin: 5px auto;
+        margin-top: 15px;
     }
+
+    .pink-section-image{
+        margin-top: 10px;
+    }
+    
+
+    .pink-section-small{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        min-height: 350px;
+        padding: 0;
+    }
+    .pink-section-content-content{
+        position: absolute;
+        bottom: 0px;
+        padding-top: 150px;
+        height: 100%;
+    }
+    .pink-section-content{
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+        font-size: 14px;
+        height: auto;
+    }
+    .pink-section-content h2{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .pink-section-image{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 30%;
+        min-width: 120px;
+        padding: 0;
+        height: 150px;
+        z-index: 22;
+    }
+
+    .pink-section-small .pink-section-image img{
+        width: 120px;
+        height: 120px;
+        margin: 5px auto;
+    }
+
+}
+
+
+@media screen and (min-width: 1022px) and (max-width: 1024px) { 
+
+    .hero-section .hero-image{
+        padding-top: 40px;
+        margin-left: 300px;
+    }
+    
+    .hero-section .hero-image img{
+        width: 400px;
+        height: 300px;
+        border-radius: 5%;
+        margin-right: 50px;
+    }
+
+    .pink-section-background{
+        margin: 5px;
+        background-color: transparent;
+    }
+
+    
+    
 }

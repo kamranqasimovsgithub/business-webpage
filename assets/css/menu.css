@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px) {
-    .navbar {
+    .dropdown {
         display: none;
     }
 
@@ -7,52 +7,40 @@
 
 @media screen and (max-width: 1024px) {
 
-    .navbar {
-        width: 100px;
-        overflow: hidden;
-    }
-    
-    .navbar a {
-        float: left;
-        font-size: 14px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
     .dropdown {
-        overflow: hidden;
+        text-align: center;
     }
     
     .dropdown .dropbtn {
-        color: #4B5D68;
-        font-size: 16px;
+        color: #fff;
+        font-size: 18px;
         font-weight: 500;
         line-height: 2;
         border: none;
-        outline: none;
-        padding: 14px 16px;
-        margin: 0;
+        outline: none;        
+        margin: 0 auto;
         background-color: transparent;
     }
     
     .dropdown-row{
         padding: 0;
+        position: fixed;
+        width: 100%;
+        background-color:rgba(204, 216, 238, 0.9);
+        left: 0;
     }
-    .navbar a:hover, .dropdown:hover .dropbtn {
+    /* .dropdown:hover .dropbtn {
         background-color: white;
-        z-index: 12;
-    }
+    } */
     
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #fff;
-        width: 150px;
-        left: auto;
+        width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+        z-index: 44;
+        color: #fff;
     }
     
    
@@ -63,23 +51,27 @@
     /* Create three equal columns that floats next to each other */
     .dropdown-column {
         width: 100%;
-        padding: 0px;
         height: 50px;
+        border-bottom: 1px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
+    .dropdown-column:hover {
+        background-color: #fff;
+    }
     .dropdown-column a {
         display: block;
         float: none;
-        color: #212353;
-        text-align: left;
+        color: black;
         font-weight: 500;
-        margin: 0;
     }
     
-    .dropdown-column a:hover {
-        background-color: #ddd;
+    /* .dropdown-column a{
+        margin-left: 20px;
     }
-    
+     */
     /* Clear floats after the columns */
     .dropdown-row:after {
         content: "";
@@ -90,7 +82,15 @@
 
 @media screen and (max-width: 394px) {
     .dropdown .dropbtn {
-        font-size: 12px;  
-        
+        font-size: 12px; 
+        text-align: left;
     }    
+
+   
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1025px) { 
+    .dropdown {
+        display: none;
+    }
 }

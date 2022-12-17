@@ -1,6 +1,6 @@
 button, .button{
     border-radius: 50px;
-    padding: 17px 29px;
+    padding: 14px 25px;
 }
 .icon-button{
     display: flex;
@@ -14,13 +14,13 @@ button, .button{
     font-size: 16px;
     font-weight: 900;
 }
-.purple-button{
-    background-color: #9c69e2;
+.red-button{
+    background-color: #f45369;
     color: #fff;
 }
 
-.pink-button{
-    background-color: #f068b0;
+.green-button{
+    background-color: #71c21b;
     color: #fff;
     font-size: 18px;
     font-weight: 900;
@@ -36,14 +36,20 @@ button, .button{
         margin-top: 20px;
         
     }
+
+    .header .white-button{
+        justify-content: center;
+        width: 120px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 394px) {
     .header .white-button{
-        margin: 0 auto;
         justify-content: center;
-        padding:10px 0;
-        margin-left: -100px;
+        width: 120px;
+        bottom: 0;
+        margin: 0 auto;
     }
 
     .header .white-button span{
