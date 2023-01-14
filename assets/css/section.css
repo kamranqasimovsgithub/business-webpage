@@ -1,6 +1,6 @@
 
 .pink-section-content-content{
-    background-color:  rgb(123, 226, 123);
+    background-color:  #00bcd4;
     padding: 10px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -109,7 +109,7 @@
 
     .pink-section-background{
         margin: 5px;
-        background-color: #2473a4;
+        background-color: #607d8b;
     }
     .pink-section-content{
         padding-right: auto;
@@ -343,7 +343,7 @@
 
 .pink-section-content p{
     line-height: 1.5;
-    color: #4a403d;
+    color: #fff;
 }
 /*Features*/
 
